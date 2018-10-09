@@ -31,9 +31,4 @@ public class AnswerButton : MonoBehaviour {
     {
         gameController.AnswerButtonClicked(answerData.isCorrect);
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
