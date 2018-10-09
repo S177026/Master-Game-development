@@ -15,6 +15,8 @@ public class GameController : MonoBehaviour {
     [Header("GameObject")]
     public GameObject questionDisplayBox;
     public GameObject endScreen;
+    public GameObject hideQA;
+    public GameObject timePanel;
 
     [Header("Script Reference")]
     private QuestionData[] questionPool;
@@ -135,6 +137,19 @@ public class GameController : MonoBehaviour {
         if (timeRemaining <= 0f)
         {
             EndRound();
-        }      
+        }
+
+        if (Input.GetKeyDown("h"))
+        {
+
+            hideQA.SetActive(false);
+            timePanel.SetActive(false);
+
+        }
+        else if (Input.GetKeyUp("h"))
+        {
+            hideQA.SetActive(true);
+            timePanel.SetActive(true);
+        }
     }
 }

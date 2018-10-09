@@ -1016,6 +1016,8 @@ MonoBehaviour:
   progressSlider: {fileID: 957267777}
   questionDisplayBox: {fileID: 1226160991}
   endScreen: {fileID: 0}
+  hideQA: {fileID: 856665675}
+  timePanel: {fileID: 1119779918}
   answerButtonPool: {fileID: 914221807}
   answerParent: {fileID: 2029581315}
 --- !u!4 &1450950104
