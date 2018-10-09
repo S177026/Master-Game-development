@@ -7,7 +7,6 @@ public class GameController : MonoBehaviour {
 
     [Header("Text Variables")]
     public Text displayedQuestion;
-    public Text timeForQuestion;
     public Text timeRemainingDisplay;
 
     [Header("UI Elements")]
@@ -22,10 +21,11 @@ public class GameController : MonoBehaviour {
     public AnswerPool answerButtonPool;
     private DataController dataControl;
     private RoundData currentData;
- 
+
     [Header("Variables")]
+    private bool isRoundActive;
     private int questionIndex;
-    private int timeRemaining;
+    private float timeRemaining;
     private int playerScore;
     public Transform answerParent;
     private List<GameObject> answerButtonGameObjects = new List<GameObject>();
@@ -39,11 +39,12 @@ public class GameController : MonoBehaviour {
         questionPool = currentData.questions;
         timeRemaining = currentData.timeLimitPerQuestion;
 
-        StartCoroutine("Countdown");
         Time.timeScale = 1;
 
         playerScore = 0;
         questionIndex = 0;
+
+        isRoundActive = true;
 
         ShowQuestion();
 
@@ -64,15 +65,12 @@ public class GameController : MonoBehaviour {
 
             AnswerButton answerButton = answerButtonGameObject.GetComponent<AnswerButton>();
             answerButton.AnswerSetup(questionData.answers[i]);
-
-
         }
 
     }
 
     private void RemoveAnswerButton()
     {
-
         while (answerButtonGameObjects.Count > 0)
         {
 
@@ -80,7 +78,6 @@ public class GameController : MonoBehaviour {
             answerButtonGameObjects.RemoveAt(0);
 
         }
-
     }
 
 
@@ -88,8 +85,10 @@ public class GameController : MonoBehaviour {
     {
         if (isCorrect)
         {
-            playerScore += currentData.pointsAddedForAnswer;
+            timeRemaining = currentData.timeLimitPerQuestion;
+            playerScore += currentData.pointsAddedForAnswer;          
             progressSlider.value += 1f;
+
         }
         else if (!isCorrect)
         {
@@ -104,30 +103,38 @@ public class GameController : MonoBehaviour {
         }
         else
         {
-            //EndScreen();
+            //EndRound();
         }
 
     }
-    public void EndScreen()
+    public void EndRound()
     {
+        isRoundActive = false;
 
-        questionDisplayBox.SetActive(false);
-        endScreen.SetActive(true);
+        questionDisplayBox.SetActive(false);     
 
     }
 
-    IEnumerator Countdown()
+    private void UpdateRemainingTime()
     {
-        while (true)
-        {
-            yield return new WaitForSeconds(1);
-            timeRemaining--;
-        }
+
+        timeRemainingDisplay.text = "Time: " + Mathf.Round(timeRemaining).ToString();
+
     }
+
+
 
     // Update is called once per frame
     void Update () {
-        timeRemainingDisplay.text = ("Time: " + timeRemaining);
+        if (isRoundActive)
+        {
+            timeRemaining -= Time.deltaTime;
+            UpdateRemainingTime();
+        }
 
+        if (timeRemaining <= 0f)
+        {
+            EndRound();
+        }      
     }
 }
