@@ -39,6 +39,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BackGround
+    uniqueID: 2491400301
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Sprites
+    uniqueID: 3913060115
+    locked: 0
+  - name: Lighting
+    uniqueID: 333787409
+    locked: 0
+  - name: ForeGround
+    uniqueID: 1263776087
     locked: 0
