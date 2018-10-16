@@ -29,6 +29,6 @@ public class AnswerButton : MonoBehaviour {
 
     public void HandleClickAnswer()
     {
-        gameController.AnswerButtonClicked(answerData.isCorrect);
+        gameController.AnswerButtonClickedPrimary(answerData.isCorrect);
     }
 }

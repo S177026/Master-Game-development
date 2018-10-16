@@ -8,8 +8,11 @@ public class RoundData
 {
 
     public int timeLimitPerQuestion;
+
     public int pointsAddedForAnswer;
+
     public int pointsTakenForAnnswer;
+
     public QuestionData[] questions;
     
 }

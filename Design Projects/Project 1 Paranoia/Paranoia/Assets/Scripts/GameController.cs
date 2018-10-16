@@ -22,31 +22,37 @@ public class GameController : MonoBehaviour {
     private QuestionData[] questionPool;
     public AnswerPool answerButtonPool;
     private DataController dataControl;
-    private RoundData currentData;
+    public RoundData currentData;
 
     [Header("Variables")]
+    public bool roundOneComplete;
     private bool isRoundActive;
-    private int questionIndex;
+    public int questionIndex;
+    public int questionIndexSecondary;
     private float timeRemaining;
     private int playerScore;
     public Transform answerParent;
     private List<GameObject> answerButtonGameObjects = new List<GameObject>();
+    
 
 
 	
 	void Start () {
 
         dataControl = FindObjectOfType<DataController>();
-        currentData = dataControl.GetRoundData();
+        currentData = dataControl.GetRoundDataPrimary();
         questionPool = currentData.questions;
         timeRemaining = currentData.timeLimitPerQuestion;
 
         Time.timeScale = 1;
 
         playerScore = 0;
+
         questionIndex = 0;
 
         isRoundActive = true;
+
+        roundOneComplete = false;
 
         ShowQuestion();
 
@@ -54,7 +60,6 @@ public class GameController : MonoBehaviour {
 	
     private void ShowQuestion()
     {
-
         RemoveAnswerButton();
         QuestionData questionData = questionPool [questionIndex];
         displayedQuestion.text = questionData.questionText;
@@ -68,29 +73,24 @@ public class GameController : MonoBehaviour {
             AnswerButton answerButton = answerButtonGameObject.GetComponent<AnswerButton>();
             answerButton.AnswerSetup(questionData.answers[i]);
         }
-
     }
 
     private void RemoveAnswerButton()
     {
         while (answerButtonGameObjects.Count > 0)
         {
-
             answerButtonPool.ReturnObject(answerButtonGameObjects[0]);
             answerButtonGameObjects.RemoveAt(0);
-
         }
     }
 
-
-    public void AnswerButtonClicked(bool isCorrect)
+    public void AnswerButtonClickedPrimary(bool isCorrect)
     {
         if (isCorrect)
         {
             timeRemaining = currentData.timeLimitPerQuestion;
             playerScore += currentData.pointsAddedForAnswer;          
             progressSlider.value += 1f;
-
         }
         else if (!isCorrect)
         {
@@ -105,16 +105,17 @@ public class GameController : MonoBehaviour {
         }
         else
         {
-            //EndRound();
+            EndRound();           
         }
-
     }
+
     public void EndRound()
     {
+        roundOneComplete = true;
         isRoundActive = false;
-
-        questionDisplayBox.SetActive(false);     
-
+        RemoveAnswerButton();
+        questionDisplayBox.SetActive(false);
+        StartCoroutine("delayTimer");
     }
 
     private void UpdateRemainingTime()
@@ -124,19 +125,28 @@ public class GameController : MonoBehaviour {
 
     }
 
-
-
     // Update is called once per frame
     void Update () {
         if (isRoundActive)
         {
             timeRemaining -= Time.deltaTime;
             UpdateRemainingTime();
+            questionDisplayBox.SetActive(true);
         }
 
         if (timeRemaining <= 0f)
         {
             EndRound();
+        }
+
+        if (roundOneComplete)
+        {
+            currentData = dataControl.GetSecondaryRoundData();
+            questionPool = currentData.questions;
+        }
+        else
+        {
+            currentData = dataControl.GetRoundDataPrimary();
         }
 
         if (Input.GetKeyDown("h"))
@@ -151,5 +161,17 @@ public class GameController : MonoBehaviour {
             hideQA.SetActive(true);
             timePanel.SetActive(true);
         }
+    }
+
+
+    IEnumerator delayTimer()
+    {   
+        //Play Animation Hear
+        yield return new WaitForSeconds(10f);
+        Debug.Log("waithing finished");
+        //play More animation
+        isRoundActive = true;
+        questionIndex = 0;
+        ShowQuestion();
     }
 }

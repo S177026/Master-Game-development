@@ -464,6 +464,53 @@ MonoBehaviour:
         isCorrect: 1
       - answerText: 'Hunting Rifles '
         isCorrect: 0
+  - timeLimitPerQuestion: 15
+    pointsAddedForAnswer: 1
+    pointsTakenForAnnswer: -1
+    questions:
+    - questionText: Pineapple Pen
+      answers:
+      - answerText: What?
+        isCorrect: 1
+      - answerText: Yes
+        isCorrect: 0
+    - questionText: Donald Trump
+      answers:
+      - answerText: Yes
+        isCorrect: 1
+      - answerText: No
+        isCorrect: 0
+    - questionText: Tell me about your experience with firearms
+      answers:
+      - answerText: I have never used a firearm and am against their use
+        isCorrect: 0
+      - answerText: 'I go deer hunting every Sunday and use a rifle '
+        isCorrect: 1
+    - questionText: Why should we believe what you said you were doing before you
+        were brought here?
+      answers:
+      - answerText: I was working, you can check with my manager
+        isCorrect: 0
+      - answerText: I was at a party, my friends will confirm
+        isCorrect: 1
+    - questionText: 'Do you own any firearms? '
+      answers:
+      - answerText: "No, I don\u2019t agree with their use"
+        isCorrect: 0
+      - answerText: I own a hunting rifle for shooting deer
+        isCorrect: 0
+    - questionText: Where were you on the morning of the 6th of October?
+      answers:
+      - answerText: 'I had just got back from work '
+        isCorrect: 0
+      - answerText: I had just finished studying
+        isCorrect: 1
+    - questionText: Have you ever purchased or otherwise obtained a gun?
+      answers:
+      - answerText: No, I have never agreed with guns and have never owned one.
+        isCorrect: 1
+      - answerText: 'Hunting Rifles '
+        isCorrect: 0
 --- !u!4 &728151587
 Transform:
   m_ObjectHideFlags: 0
@@ -1019,6 +1066,14 @@ MonoBehaviour:
   hideQA: {fileID: 856665675}
   timePanel: {fileID: 1119779918}
   answerButtonPool: {fileID: 914221807}
+  currentData:
+    timeLimitPerQuestion: 0
+    pointsAddedForAnswer: 0
+    pointsTakenForAnnswer: 0
+    questions: []
+  roundOneComplete: 0
+  questionIndex: 0
+  questionIndexSecondary: 0
   answerParent: {fileID: 2029581315}
 --- !u!4 &1450950104
 Transform:

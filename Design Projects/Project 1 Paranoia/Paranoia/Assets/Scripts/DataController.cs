@@ -11,8 +11,15 @@ public class DataController : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
     }
 
-    public RoundData GetRoundData()
+    public RoundData GetRoundDataPrimary()
     {
-        return allData[0];
+        return allData[0];  
     }
+
+    public RoundData GetSecondaryRoundData()
+    {
+       return allData[1];   
+    }
+
+
 }
