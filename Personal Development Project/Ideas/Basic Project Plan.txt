@@ -1,0 +1,13 @@
+Personal Development Plan
+Dive deep into unreal blueprint (visual scripting)
+Don't need to make game just a project showing off techniques in unreal using blueprint.
+
+Techniques i want to show
+- Reflection
+- Macro and Function comparrison
+- Data Tables
+- AI Navigation
+- Matinee (Cinematic Cutscenes)
+- Advanced UI Elements
+- 
+
