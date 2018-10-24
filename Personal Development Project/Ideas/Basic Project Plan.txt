@@ -8,6 +8,5 @@ Techniques i want to show
 - Data Tables
 - AI Navigation
 - Matinee (Cinematic Cutscenes)
-- Advanced UI Elements
-- 
+- UI Elements
 
