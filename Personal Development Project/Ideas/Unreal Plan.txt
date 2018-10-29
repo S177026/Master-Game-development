@@ -1,0 +1,8 @@
+ILP Development Plan
+
+Key areas of research
+- Sound Implementation
+- Cinematic cutscene using Sequencer
+- Visual effect (Volumetric Fog/Particle Effects)
+- Lighting
+- UI
