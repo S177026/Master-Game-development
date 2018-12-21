@@ -1,0 +1,20 @@
+Notes for dev management
+
+Journal Layout:
+
+Introduction
+- State broad theme of the study, what are you talking about and why
+- The importance of the aricle you are writing must be shown, why should people read what you are writing (Give previous reaserch)
+- Talk about previous studies or available literature that backups your argument
+- Discuss the important gaps, incinsistencies and/or contriversies in the talk about literatur above, and discuss the current study you will address 
+- Clear indication of the following
+	- The core research problem/question to be addressed in the study
+	- The specific research objectives that will guide your research
+	- The context in which the study will be conducted and the unit of analysis of the study
+- Finally provide the reader with a outline structure of the article
+
+
+Literature Review
+- The purpose of this is to take another looked at what other researchers have done and/or dicovered regarding the specific topic
+- Provide background and motivation for the main object of the article
+- 
