@@ -18,3 +18,9 @@ Literature Review
 - The purpose of this is to take another looked at what other researchers have done and/or dicovered regarding the specific topic
 - Provide background and motivation for the main object of the article
 - 
+
+Introduction
+Research (Acamdemic and similar games)
+Iteration
+Management
+COnclusion
