@@ -1,0 +1,40 @@
+Hello my name is Lewis, In this video I will be discussing my recommended project management 
+and data collection techniques for game development. 
+
+
+In traditional project management, the development process is divided into static phases, these phases comprise of 
+Analysis which list all requirements for the project, 
+Design the project from requirements, 
+Developing the mechanics, art and anything required for the project, 
+Testing the product, 
+Maintain
+This is commonly known as the waterfall method. 
+These phases must be executed in this specific order, as it allows for increased control throughout 
+each phase and offers a lot of formal planning before development is underway.
+
+
+Agile was created for projects that require significant flexibility and speed compared to more traditional management. 
+Agile development follows an incremental and iterative development process and is highly flexible allowing for rapid 
+adjustments throughout the project. Instead of massive planning like traditional methods, a project using agile will 
+create a product backlog of tasks also known as story points that are prioritized in levels of importance, these tasks 
+are then compiled in to a sprint that can last up to 4 weeks. After the sprint is complete the team will review the 
+sprint process, at this point it allows the team to identify issues and improvements they can implement for the next sprint.
+
+
+Scrum is an iterative development process that incorporates close cooperation between employees. A Unique characteristic 
+of scrum is a daily stand-up meeting or scrum meeting, the meeting is run by a scrum master and will ask three main 
+questions to the team members, What I did Yesterday? What I’ll do today? And What’s in my way? This gives each member 
+of the team a chance to communicate and evaluate the current progress of the sprint, this allows for issues or problems 
+to be discovered quickly and adjusted and gives the entire team all the data. This can increase the productivity of the 
+team members as well as the quality of the work as it reduces the chance of failed sprints. Scrum also using scrum boards 
+in which the team can track current in progress tasks and the backlog, these boards can be non-digital and digital. 
+
+
+XP is a highly flexible agile based methodology that is used in the software development industry, the basis of XP 
+development code-writing, test, iterate. Poor communication is the reason behind many project failures, this can occur 
+between developers and customers. XP uses a special role called a coach, the sole responsibility of a coach is to ensure 
+good communication and detect any inconsistency in communication. Pair programming, is a simple straightforward concept. 
+Two programmers work side by side at  one computer, continuously collaborating on the same design, code and testing. 
+It allows two people to create higher quality than produced from solitary efforts. Other benefits reduced cycle time, 
+enhanced learning with sharing of knowledge between both programmer, improve team work and relationship and overall 2 
+head's is better than 1.
