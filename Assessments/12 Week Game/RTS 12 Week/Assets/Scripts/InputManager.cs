@@ -105,7 +105,7 @@ public class InputManager : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, 100))
         {
-            if(hit.collider.tag == "Ground" && selectedInfo.isSelected)
+            if(hit.collider.tag == "Ground")
             {
                 selectedInfo.isSelected = false;
                 //selectedInfo = null;

@@ -362,6 +362,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Worker (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4364619737861344363, guid: c80a1c5aef8e1f24db6c809988fdd01d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 603701617246922381, guid: c80a1c5aef8e1f24db6c809988fdd01d,
         type: 3}
       propertyPath: r_Panel
@@ -392,11 +397,6 @@ PrefabInstance:
       propertyPath: Panel
       value: 
       objectReference: {fileID: 965642225}
-    - target: {fileID: 4364619737861344363, guid: c80a1c5aef8e1f24db6c809988fdd01d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 603701617246922385, guid: c80a1c5aef8e1f24db6c809988fdd01d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -472,6 +472,26 @@ PrefabInstance:
       propertyPath: rLevelDis
       value: 
       objectReference: {fileID: 1992070987}
+    - target: {fileID: 603701617246922382, guid: c80a1c5aef8e1f24db6c809988fdd01d,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 603701617246922382, guid: c80a1c5aef8e1f24db6c809988fdd01d,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 603701617246922383, guid: c80a1c5aef8e1f24db6c809988fdd01d,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 603701617246922380, guid: c80a1c5aef8e1f24db6c809988fdd01d,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c80a1c5aef8e1f24db6c809988fdd01d, type: 3}
 --- !u!1 &291152894
@@ -522,6 +542,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Worker (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4364619737861344363, guid: c80a1c5aef8e1f24db6c809988fdd01d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 603701617246922381, guid: c80a1c5aef8e1f24db6c809988fdd01d,
         type: 3}
       propertyPath: r_Panel
@@ -552,11 +577,6 @@ PrefabInstance:
       propertyPath: Panel
       value: 
       objectReference: {fileID: 1771709391}
-    - target: {fileID: 4364619737861344363, guid: c80a1c5aef8e1f24db6c809988fdd01d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 603701617246922385, guid: c80a1c5aef8e1f24db6c809988fdd01d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -632,6 +652,26 @@ PrefabInstance:
       propertyPath: rLevelDis
       value: 
       objectReference: {fileID: 1824192785}
+    - target: {fileID: 603701617246922382, guid: c80a1c5aef8e1f24db6c809988fdd01d,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 603701617246922382, guid: c80a1c5aef8e1f24db6c809988fdd01d,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 603701617246922383, guid: c80a1c5aef8e1f24db6c809988fdd01d,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 603701617246922380, guid: c80a1c5aef8e1f24db6c809988fdd01d,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c80a1c5aef8e1f24db6c809988fdd01d, type: 3}
 --- !u!1 &436793722
@@ -1409,7 +1449,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.24000001, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.027000427, y: -0.075998306}
+  m_AnchoredPosition: {x: -0.027000427, y: -0.0759964}
   m_SizeDelta: {x: 0.30999756, y: 0.45600128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &870389084
@@ -1747,7 +1787,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.24000001, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.027000427, y: -0.075998306}
+  m_AnchoredPosition: {x: -0.027000427, y: -0.0759964}
   m_SizeDelta: {x: 0.30999756, y: 0.45600128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &973115648
@@ -1804,6 +1844,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Worker (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4364619737861344363, guid: c80a1c5aef8e1f24db6c809988fdd01d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 603701617246922381, guid: c80a1c5aef8e1f24db6c809988fdd01d,
         type: 3}
       propertyPath: r_Panel
@@ -1834,11 +1879,6 @@ PrefabInstance:
       propertyPath: Panel
       value: 
       objectReference: {fileID: 1283325076}
-    - target: {fileID: 4364619737861344363, guid: c80a1c5aef8e1f24db6c809988fdd01d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 603701617246922385, guid: c80a1c5aef8e1f24db6c809988fdd01d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1914,6 +1954,26 @@ PrefabInstance:
       propertyPath: rLevelDis
       value: 
       objectReference: {fileID: 2141441773}
+    - target: {fileID: 603701617246922382, guid: c80a1c5aef8e1f24db6c809988fdd01d,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 603701617246922382, guid: c80a1c5aef8e1f24db6c809988fdd01d,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 603701617246922383, guid: c80a1c5aef8e1f24db6c809988fdd01d,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 603701617246922380, guid: c80a1c5aef8e1f24db6c809988fdd01d,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c80a1c5aef8e1f24db6c809988fdd01d, type: 3}
 --- !u!114 &1077871601 stripped
@@ -2993,7 +3053,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.24000001, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.027000427, y: -0.075998306}
+  m_AnchoredPosition: {x: -0.027000427, y: -0.0759964}
   m_SizeDelta: {x: 0.30999756, y: 0.45600128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1471323846
@@ -3251,7 +3311,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.24000001, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.027000427, y: -0.075998306}
+  m_AnchoredPosition: {x: -0.027000427, y: -0.0759964}
   m_SizeDelta: {x: 0.30999756, y: 0.45600128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1654510859
@@ -4174,6 +4234,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Worker (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4364619737861344363, guid: c80a1c5aef8e1f24db6c809988fdd01d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 603701617246922381, guid: c80a1c5aef8e1f24db6c809988fdd01d,
         type: 3}
       propertyPath: r_Panel
@@ -4204,11 +4269,6 @@ PrefabInstance:
       propertyPath: Panel
       value: 
       objectReference: {fileID: 179483711}
-    - target: {fileID: 4364619737861344363, guid: c80a1c5aef8e1f24db6c809988fdd01d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 603701617246922385, guid: c80a1c5aef8e1f24db6c809988fdd01d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4284,6 +4344,26 @@ PrefabInstance:
       propertyPath: rLevelDis
       value: 
       objectReference: {fileID: 1450419809}
+    - target: {fileID: 603701617246922382, guid: c80a1c5aef8e1f24db6c809988fdd01d,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 603701617246922382, guid: c80a1c5aef8e1f24db6c809988fdd01d,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 603701617246922383, guid: c80a1c5aef8e1f24db6c809988fdd01d,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 603701617246922380, guid: c80a1c5aef8e1f24db6c809988fdd01d,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c80a1c5aef8e1f24db6c809988fdd01d, type: 3}
 --- !u!1 &1966675329 stripped
