@@ -2,124 +2,37 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 public class ObjectInfo : MonoBehaviour
 {
-    public TaskList task;
-    public ResourceManager RM;
-
-    GameObject targetNode;
-
-    public ResourceNodeMnanager.ResourceType heldResourcesType;
+    public CanvasGroup r_Panel;
     public bool isSelected = false;
-    public bool isGathering = false;
+    public bool isUnit;
+
+    public GameObject selectionIndicator;
 
     public string objectName;
-
-    private NavMeshAgent agent;
-
-    public int heldResource;
-    public int maxHeldResource;
-    public GameObject itemLimit;
 
     // Start is called before the first frame update
     void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
-        StartCoroutine(GatherTick());
+        r_Panel = GameObject.Find("UnitPanel").GetComponent<CanvasGroup>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(targetNode == null)
-        {
-            task = TaskList.Idle;
-        }
-        if (heldResource >= maxHeldResource)
-        {
-            isGathering = false;
-            itemLimit.SetActive(true);
-            task = TaskList.Idle;
-        }
+        selectionIndicator.SetActive(isSelected);
 
-        if(Input.GetMouseButtonDown(1) && isSelected)
+        if (isUnit && isSelected)
         {
-            RightClick();
+            r_Panel.alpha = 1;
+            r_Panel.blocksRaycasts = true;
         }
-    }
-
-    public void RightClick()
-    {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-
-        if(Physics.Raycast(ray, out hit, 1000))
+        else if (!isSelected)
         {
-            if(hit.collider.tag == "Ground")
-            {
-                agent.destination = hit.point;
-                Debug.Log("Moving");
-                task = TaskList.Moving;
-            }
-            else if(hit.collider.tag == "Resource")
-            {
-                agent.destination = hit.collider.gameObject.transform.position;
-                task = TaskList.Gathering;
-                Debug.Log("Is Going To Havest");
-                targetNode = hit.collider.gameObject;
-            }
-            else if (hit.collider.tag == "Safe Zone")
-            {
-                agent.destination = hit.collider.gameObject.transform.position;
-                task = TaskList.Deliver;
-                Debug.Log("Is Delivering Shit");
-            }
-        }
-    }
-
-    public void OnTriggerEnter(Collider other)
-    {
-        GameObject hitObject = other.gameObject;
-
-        if(hitObject.tag == "Resource" && task == TaskList.Gathering)
-        {
-            isGathering = true;
-            hitObject.GetComponent<ResourceNodeMnanager>().gatheres++;
-            heldResourcesType = hitObject.GetComponent<ResourceNodeMnanager>().resourceType;
-        }
-        else if(hitObject.tag == "Safe Zone")
-        {
-            if(RM.wood >= RM.maxWood)
-            {
-                task = TaskList.Idle;
-            }
-            else
-            {
-                RM.wood += heldResource;
-                heldResource = 0;
-                itemLimit.SetActive(false);
-                task = TaskList.Idle;
-            }
-        }
-    }
-    public void OnTriggerExit(Collider other)
-    {
-        GameObject hitObject = other.gameObject;
-        if(hitObject.tag == "Resource")
-        {
-            isGathering = false;
-            hitObject.GetComponent<ResourceNodeMnanager>().gatheres--;
-        }
-    }
-    IEnumerator GatherTick()
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(1);
-            if (isGathering)
-            {
-                heldResource++;
-            }
+            r_Panel.alpha = 0;
+            r_Panel.blocksRaycasts = false;         
         }
     }
 }

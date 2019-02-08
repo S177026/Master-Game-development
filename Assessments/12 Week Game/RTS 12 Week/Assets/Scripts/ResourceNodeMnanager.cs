@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ResourceNodeMnanager : MonoBehaviour
 {
-    public enum ResourceType { Wood, Herb, Gold}
+    public enum ResourceType { Wood, Herb, Gold, Cables}
+
     public ResourceType resourceType;
 
     public float harvestTime;
