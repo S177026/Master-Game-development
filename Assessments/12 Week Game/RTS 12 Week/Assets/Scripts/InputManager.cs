@@ -57,6 +57,18 @@ public class InputManager : MonoBehaviour
             //boxEnd = Vector2.zero;
         }
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            selectedInfo.isSelected = false;
+
+            units = GameObject.FindGameObjectsWithTag("Civilian"); //Grabs all selectable objects
+
+            foreach (GameObject unit in units) //For each selectable object
+            {
+                unit.GetComponent<ObjectInfo>().isSelected = false; //Deselects all selectable objects
+            }
+        }
+
         if(Input.GetMouseButton(0) && boxStart == Vector2.zero)
         {
             boxStart = Input.mousePosition;
@@ -93,9 +105,10 @@ public class InputManager : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, 100))
         {
-            if(hit.collider.tag == "Ground")
+            if(hit.collider.tag == "Ground" && selectedInfo.isSelected)
             {
                 selectedInfo.isSelected = false;
+                //selectedInfo = null;
                 Debug.Log("Ground Click");
 
                 units = GameObject.FindGameObjectsWithTag("Civilian"); //Grabs all selectable objects
@@ -104,11 +117,17 @@ public class InputManager : MonoBehaviour
                 {
                     unit.GetComponent<ObjectInfo>().isSelected = false; //Deselects all selectable objects
                 }
-
-                selectedInfo = null; //Clears out the selected info
+                selectedInfo = null;
             }
             else if(hit.collider.tag == "Civilian")
             {
+                units = GameObject.FindGameObjectsWithTag("Civilian"); //Grabs all selectable objects
+
+                foreach (GameObject unit in units) //For each selectable object
+                {
+                    unit.GetComponent<ObjectInfo>().isSelected = false; //Deselects all selectable objects
+                }
+
                 selectedObject = hit.collider.gameObject;
                 selectedInfo = selectedObject.GetComponent<ObjectInfo>();
 

@@ -46,6 +46,7 @@ public class Civilian : MonoBehaviour
     {
         rLevelDis.text = "Radiation: " + radiation;
         radiationBar.value = radiation;
+    
         if (radiation >= 100)
         {
             Destroy(gameObject);

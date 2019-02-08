@@ -5,7 +5,6 @@ using UnityEngine.AI;
 using UnityEngine.UI;
 public class ObjectInfo : MonoBehaviour
 {
-    public CanvasGroup r_Panel;
     public bool isSelected = false;
     public bool isUnit;
 
@@ -13,10 +12,12 @@ public class ObjectInfo : MonoBehaviour
 
     public string objectName;
 
+    public GameObject Panel;
+
     // Start is called before the first frame update
     void Start()
     {
-        r_Panel = GameObject.Find("UnitPanel").GetComponent<CanvasGroup>();
+        
     }
 
     // Update is called once per frame
@@ -26,13 +27,13 @@ public class ObjectInfo : MonoBehaviour
 
         if (isUnit && isSelected)
         {
-            r_Panel.alpha = 1;
-            r_Panel.blocksRaycasts = true;
+            Panel.gameObject.SetActive(true);
+            Debug.Log("UI Showing");
         }
         else if (!isSelected)
         {
-            r_Panel.alpha = 0;
-            r_Panel.blocksRaycasts = false;         
+            Panel.gameObject.SetActive(false);
+
         }
     }
 }
