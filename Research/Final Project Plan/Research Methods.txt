@@ -1,0 +1,66 @@
+Scientific Method
+- Experience and observation to gain insight
+- Conduct background research on similar games
+- create a hypothesis on what has happend and why
+- Test 
+- ananlyse
+- Communicate Results
+
+Research must be 
+- Controlled (Aware of all variables, play testing game. Some varable may have influence on results)
+- Rigorous (Goin into depth)
+- Systematics (Documentaion of work, playtestiing results, Documenting process of testing/reseaching)
+- Valid (Recognise techniques are valid, don't just make something up)
+- Verifiable (Can be repeatable by someone else, If noboday can repreat work not applicable)
+- Empirical (Hard Evidence you can print and giv eto someone, not opions or believes)
+- Critical (Full proof, no flaws into the system. can also defend your opinion)
+
+Data Vs Knowledge
+
+Data Collection - numbers, serveys, data doesn't mean anything. Turn data into information
+Information - organise data into a format to present to others.
+Knowledge - Analyse Information to turn it into knowledge, we can act on knowledge. 
+
+Hypothesis - A suggested explantion for an observed Phenomenon
+Theory - A well Explanied, proven Hypothsis
+
+Qualitative: Quality of research
+
+Quantitative: Measure Quanatity 
+
+Primary + Secondary research
+Primary Done by yourself
+Secondary Done by others
+
+Conceptual Research think about possible problem solving
+Empirical data based research
+
+Independent variables
+Control Variable - which is the baseline behaviour, Pre test can be the control subject. Need it to scientifically connect 
+
+Independent variable - what can be changed or controlled differently 
+
+dependent - Tested and measured form the player/customer.
+
+Extraneous - Could affect the result of the outcome, player emotional status before the test, make sure the player is feeling ok before testing as it may effect the player and test results.
+
+Intervening - Could hardware be causing issues when play testing, If player the game can the mouse or game pad affect the dependnents results.
+
+Experiements 
+- Between Gorups - Randomley selected group of people, each group tests a certain element of the game. Need to make sure each group is controlled Age, Sex, Taste,
+- Within Group - Have groups test every element, can affect results if player are testing for hours, may get tied or bored and will affect result.
+- Counter balanced 
+- Matched Pairs
+
+Precision Vs Accuarcy
+- Accuracy is the closness of a given measurment to its true value (closness to the original plan)
+- Precision is the stability of the results. 
+
+Report format:
+Introduction - Discussing th wider area state of the art
+Definitions
+Conspetural Model - Your estimation and belives
+Experiements measures - 
+Consequences of work
+Conclusions -  
+

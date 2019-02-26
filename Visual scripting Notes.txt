@@ -1,0 +1,27 @@
+Steve Visual Scripting Audio and maze generator:
+
+Audacity
+
+Audio for Unreal:
+Filename without spaces
+16-Bit
+Appropriate sample rate
+Mono
+
+Loops
+{
+	Crossing points (Cut at zero frequency, audacity find closest crossing points)
+	Fades (Graduall increase/Decrease volume)
+	Split and crosfades
+}
+
+FMOD
+WWISE
+The two most used audio editing interfaces. Create filters that ureal can used to create the sound, reduces the ammount of memeory used by unreal
+
+Tile Edge Numbering
+North = 0 && -Y
+East = 1 && +X
+South = 2 && +Y
+West = 3 && -X
+Double check rotation value in unreal as it can be unrealiable.

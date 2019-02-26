@@ -1,0 +1,33 @@
+Visual Scripting
+	{
+		Data Tables
+		{
+			float 
+			int
+			string
+			transform
+			boolean
+			
+			structure allow us to store different types of data in one variable
+			The variables used in the structure need a name, these name will represent heading on the data table
+			
+			Game designer excel - gamasutra   
+			Create Function
+		
+		}
+
+			1 Dimesiona array {1, 2, 3, 4, 5, }
+			
+			2 Dimenstional array grid 
+			
+			X,Y pos, 
+			
+			Width = 5 
+			
+			(Width * Y) + X
+
+
+
+
+
+	}

@@ -1,0 +1,116 @@
+Final Project Plan Lesson: Competitor Analysis
+IP
+- Copyright
+- Trade Secret
+- Trademark
+- Patent
+- Fair Use
+- Creative commons
+are IP tools that allow people to protect their protect
+
+Copyright is easy and versitile, improtant for small business, Protect the expression of an idea. not the idea its self but how you express the idea. Two teams can create the same game but it depends on how they 
+express their game.
+
+Trade Secrets: Confidential info/classified, anything that can give you a competitive edge, competitor anayalysis - pre order, mailing list. Law of confident in the UK, however you need to proove you have taken the suitable
+step in protecting the data. NDA 
+
+TradeMark: Your identity, Comapany name, Logo, Graphic, Smell, Color. Can be exspensive.
+
+Patents: Tend to be hardware but can be software, last 20 Years, most expensive to protect. Algorithm can be patent. TIm langdel
+
+Fair Use, Allow you to use limited ammount of copyright material
+- Purpose: Education, review, parady
+- Nature: Commercial Gain, Factual Work/Not fiction
+- Ammount: Small extract, Grey area(Smalle extract not defined)
+- Market Effect: If you impact the creators market.
+
+Creative Commons Licence: Works within existing copyright frameworks, clarifys what can and cannot be done, Rights that the company have and right the customers have with the product.
+
+Customer Relationship Management - Aquire-Retain-Extend.
+
+The 5 I
+Identification - Can the audience be contacted accross diferent platforms e.g. Twitter, website, reddit 
+Individualisation - Can communications and products be tailored
+Interatction - Can the customer communicate back, given feedback
+Integration - 360 degree view of the customer
+Integrity - Is they trust comming form customers and developers
+
+Justify the decsions made
+Need a loyal community or the hype curve will fail after launch
+
+
+A value chain
+{
+	A series of activities to add value to the product
+}
+
+
+
+
+Competitor Analysis 
+{
+	Who are your competitors?
+	How similar is their game to yours?
+	What were their past strategies?
+	How aggressive are they on the advertsing front?
+	Do they share the same strengths and weaknesses?
+	How big of a threat are they actually to you?
+	
+	Finding Where the content is located (Looking for information about the developer or Game)
+	{
+		Forms include Blog/News page, Social Media Channels, IndieDB Profile, Steam Page, Itch.io, Poscast, FAQ's, Press Kit
+	}
+
+	Next Analyse the content gathered
+	{
+		What is the Quantity of each content type published
+		
+		What is the frequency of each content asset
+		
+		How does the distrubution of topics discussed look like
+		
+		Example Below
+		
+		Content form/Channel 	Frequency 		Topics covered
+		
+		Blog 					1 per week 		AI, Imagery
+		Twitter 				2 per day 		Game Assets/ General Info
+		YouTube 				1 per month 	Trailer/Teaser/Commentary/podcast
+	
+	}
+
+		Rate The quality of the content 
+		Ask youself a few questions
+		{
+			How accurate is their Content?
+			Are there Spelling and/or gramatical errors?
+			How in-depth does the content go?
+			what tone do they adopt in their content?
+			Is their content long or short?
+			Istheir content structured in a readable way?
+			Who is writing their content?	
+		}
+		
+		Social Media Integration
+		{	
+			Facebook
+			Twitter
+			LinkedIn
+			YouTube
+			IndieDB
+			Reddit (in form of a subreddit)
+			Instagram
+			And forums like Gamasutra, tigsource, etc.
+			
+			How many followers, Check the traffic to the pages, what posts go out, do they engage with their customers/ how often
+		}
+		
+		Now that you know where you stand alongside your competitors marketing effort, it is up to you to decide what you would have to do to keep up with a similar pace or even surpass them.
+
+		Is it publishing volume that is outpacing you or simply the great quality of content published and promoted?
+		Addressing now weaknesses in your content strategy/promotion is key to gain at least a similar level of success. 
+		Of course no one wants to be a copycat but when it comes to having a solid content plan in place there is no shame in looking at what others did to be successful with their game.
+
+		Important thing here is to look at your social metrics of every channel and see what is working for you and what doesn’t.
+
+}

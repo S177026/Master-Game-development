@@ -1,0 +1,15 @@
+The Significant of the digits
+Bryman & Bell (2011)
+
+Normal Distribution - Mean, Median, Mode
+
+Mean = Average
+
+Median = Middle Value
+
+Mode = Data that appears the most
+
+Standard Deviation - This is a measure of how spread out the numbers are.
+A measure of how far each value is from the mean
+
+
