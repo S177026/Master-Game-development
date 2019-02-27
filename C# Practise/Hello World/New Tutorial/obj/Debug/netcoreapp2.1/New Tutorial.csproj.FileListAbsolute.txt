@@ -1,0 +1,11 @@
+C:\Users\S177026\Documents\GitHub\Master-Game-development\C# Practise\Hello World\New Tutorial\bin\Debug\netcoreapp2.1\New Tutorial.deps.json
+C:\Users\S177026\Documents\GitHub\Master-Game-development\C# Practise\Hello World\New Tutorial\bin\Debug\netcoreapp2.1\New Tutorial.runtimeconfig.json
+C:\Users\S177026\Documents\GitHub\Master-Game-development\C# Practise\Hello World\New Tutorial\bin\Debug\netcoreapp2.1\New Tutorial.runtimeconfig.dev.json
+C:\Users\S177026\Documents\GitHub\Master-Game-development\C# Practise\Hello World\New Tutorial\bin\Debug\netcoreapp2.1\New Tutorial.dll
+C:\Users\S177026\Documents\GitHub\Master-Game-development\C# Practise\Hello World\New Tutorial\bin\Debug\netcoreapp2.1\New Tutorial.pdb
+C:\Users\S177026\Documents\GitHub\Master-Game-development\C# Practise\Hello World\New Tutorial\obj\Debug\netcoreapp2.1\New Tutorial.csprojAssemblyReference.cache
+C:\Users\S177026\Documents\GitHub\Master-Game-development\C# Practise\Hello World\New Tutorial\obj\Debug\netcoreapp2.1\New Tutorial.csproj.CoreCompileInputs.cache
+C:\Users\S177026\Documents\GitHub\Master-Game-development\C# Practise\Hello World\New Tutorial\obj\Debug\netcoreapp2.1\New Tutorial.AssemblyInfoInputs.cache
+C:\Users\S177026\Documents\GitHub\Master-Game-development\C# Practise\Hello World\New Tutorial\obj\Debug\netcoreapp2.1\New Tutorial.AssemblyInfo.cs
+C:\Users\S177026\Documents\GitHub\Master-Game-development\C# Practise\Hello World\New Tutorial\obj\Debug\netcoreapp2.1\New Tutorial.dll
+C:\Users\S177026\Documents\GitHub\Master-Game-development\C# Practise\Hello World\New Tutorial\obj\Debug\netcoreapp2.1\New Tutorial.pdb
