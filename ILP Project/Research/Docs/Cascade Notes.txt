@@ -1,0 +1,12 @@
+Cascade Unreal 4 Notes
+
+Particle - Point in space that contain the behaviour of the effect
+Particle System - Asset that is in the content browser
+Emiter Actor - Object that is in the scen that holds the reference of the particle system
+Particle System Component - For use in bluprint to play a Particle
+Cascade - Particle editing system for unreal
+Emitter - Inside Cascade, emitter list has colunms. Breaks effect up into seperate elements
+Module - Component of an emitter that contains different behaviour e.g. Size by life, Lifetime. Some modules are required. Modules run top to bottom
+Type Data modules - What kind of particle you want to create, 
+distributions - 
+
